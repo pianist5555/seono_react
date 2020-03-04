@@ -9,7 +9,7 @@ import Home from "./components/home.js";
 
 class App extends Component {
   render() {
-    return <Home parameter="react"/>;
+    return <Home propsName="react">사이값을 보여주는 children</Home>;
   }
 }
 
