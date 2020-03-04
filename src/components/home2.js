@@ -4,15 +4,17 @@ class Home2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      number: 0
+      number: 0,
+      gel: "simply code"
     };
   }
   render() {
-    const { number } = this.state;
+    // 오브젝트 비구조화 할당
+    const { number, gel } = this.state;
     console.log(number)
     return (
       <div>
-        <h1>{number}</h1>
+        <h1>{number} {gel}</h1>
         <button
           onClick={() => {
             this.setState({ number: number + 1 });
