@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*I will protect my eyes*/
+html {
+  background-color: rgba(24, 23, 23, 0.335);
+}
+
+html h1, p, li, ul,text {
+  color : rgba(5, 5, 5, 0.829);
+}
