@@ -7,6 +7,7 @@ import EventForm from "./components/eventForm.js";
 import Vaildation from "./components/Vaildation.js"
 import Iteration from "./components/iteration.js"
 import IterationObject from "./components/iterationObject.js"
+import Info from "./components/Info.js"
 
 /*함수형은 state, 라이플사이클 API 사용 불가 대신 hook 사용 페이스북 오픈소스에서 권장*/
 // function App() {
@@ -24,6 +25,7 @@ class App extends Component {
         <Vaildation></Vaildation>
         <Iteration></Iteration>
         <IterationObject></IterationObject>
+        <Info></Info>
       </div>
     );
   }
