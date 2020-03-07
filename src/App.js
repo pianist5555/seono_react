@@ -9,6 +9,7 @@ import Iteration from "./components/iteration.js"
 import IterationObject from "./components/iterationObject.js"
 import Info from "./components/Info.js"
 import ReducerGo from "./components/UseReducer.js"
+import UseMemo from "./components/UseMemo.js"
 
 /*함수형은 state, 라이플사이클 API 사용 불가 대신 hook 사용 페이스북 오픈소스에서 권장*/
 // function App() {
@@ -28,6 +29,7 @@ class App extends Component {
         <IterationObject></IterationObject>
         <Info></Info>
         <ReducerGo></ReducerGo>
+        <UseMemo></UseMemo>
       </div>
     );
   }
