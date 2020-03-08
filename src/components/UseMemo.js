@@ -15,11 +15,14 @@ const UseMemo = () => {
     setNumber(e.target.value);
   };
 
-  const onInsert = e => {
+  const onInsert = () => {
     const nextList = list.concat(parseInt(number));
     setList(nextList);
     setNumber("");
   };
+
+  //2번째 파라미터인 list 배열이 변경 되었을 경우에만 getAverage함수가 호출된다
+  const avg = useMemo(()=>getAverage(list),[list])
 
   return (
     <div>
@@ -32,7 +35,7 @@ const UseMemo = () => {
       </ul>
       <div>
         <b>평균값:</b>
-        {getAverage(list)}
+        {avg/*변경전getAverage(list)*/}
       </div>
     </div>
   );
