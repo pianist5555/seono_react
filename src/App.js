@@ -4,12 +4,12 @@ import Home from "./components/home.js";
 import Home2 from "./components/home2.js";
 import Event from "./components/event.js";
 import EventForm from "./components/eventForm.js";
-import Vaildation from "./components/Vaildation.js"
-import Iteration from "./components/iteration.js"
-import IterationObject from "./components/iterationObject.js"
-import Info from "./components/Info.js"
-import ReducerGo from "./components/UseReducer.js"
-import UseMemo from "./components/UseMemo.js"
+import Vaildation from "./components/Vaildation.js";
+import Iteration from "./components/iteration.js";
+import IterationObject from "./components/iterationObject.js";
+import Info from "./components/Info.js";
+import ReducerGo from "./components/UseReducer.js";
+import UseMemo from "./components/UseMemo.js";
 
 /*함수형은 state, 라이플사이클 API 사용 불가 대신 hook 사용 페이스북 오픈소스에서 권장*/
 // function App() {

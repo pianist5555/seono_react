@@ -24,8 +24,9 @@ const UseMemo = () => {
     setList(nextList);
     setNumber("");
     // 'inputEl'이라는 ref를 가진 현재에 포커스 함수를 실행
+    // ref가 바뀐다해도 컴포넌트는 렌더링되지 않는다.
     inputEl.current.focus();
-  },[number, list]);
+  }, [number, list]);
 
   //2번째 파라미터인 list 배열이 변경 되었을 경우에만 getAverage함수가 호출된다
   const avg = useMemo(() => getAverage(list), [list]);
