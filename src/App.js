@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import { Route, Link } from "react-router-dom";
 import Home from "./components/home.js";
 import Home2 from "./components/home2.js";
 import Event from "./components/event.js";
@@ -10,16 +11,16 @@ import IterationObject from "./components/iterationObject.js";
 import Info from "./components/Info.js";
 import ReducerGo from "./components/UseReducer.js";
 import UseMemo from "./components/UseMemo.js";
-
-/*함수형은 state, 라이플사이클 API 사용 불가 대신 hook 사용 페이스북 오픈소스에서 권장*/
-// function App() {
-//   return <div>Hello</div>;
-// }
+import About from "./components/About.js";
+import Links from "./components/Links.js";
 
 class App extends Component {
   render() {
     return (
       <div>
+        {/*exact를 사용하면, 매칭이 될 경우 하위 라우트 설정을 보지 않게 됩니다.*/}
+        <Route path="/About" component={About} exact={true} />
+        <Route path={["/Links","/Links2"]} component={Links} exact={true} />
         <Home propsName="react">사이값을 보여주는 children</Home>
         <Home2></Home2>
         <Event></Event>
