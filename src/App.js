@@ -34,7 +34,7 @@ class App extends Component {
         <UseMemo></UseMemo>
         <Link to="/profile/velopert">velopert 프로필</Link>
         <Link to="/profile/gildong">gildong 프로필</Link>
-        <Route path="/profile/:username" component={Profile}/>
+        <Route path="/profile/:username2" component={Profile}/>
       </div>
     );
   }
