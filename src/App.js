@@ -13,6 +13,7 @@ import ReducerGo from "./components/UseReducer.js";
 import UseMemo from "./components/UseMemo.js";
 import About from "./components/About.js";
 import Links from "./components/Links.js";
+import Profile from "./components/Profile.js";
 
 class App extends Component {
   render() {
@@ -31,6 +32,9 @@ class App extends Component {
         <Info></Info>
         <ReducerGo></ReducerGo>
         <UseMemo></UseMemo>
+        <Link to="/profile/velopert">velopert 프로필</Link>
+        <Link to="/profile/gildong">gildong 프로필</Link>
+        <Route path="/profile/:username" component={Profile}/>
       </div>
     );
   }
