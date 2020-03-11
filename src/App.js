@@ -14,6 +14,7 @@ import UseMemo from "./components/UseMemo.js";
 import About from "./components/About.js";
 import Links from "./components/Links.js";
 import Profile from "./components/Profile.js";
+import Query from "./components/Query.js";
 
 class App extends Component {
   render() {
@@ -35,6 +36,7 @@ class App extends Component {
         <Link to="/profile/velopert">velopert 프로필</Link>
         <Link to="/profile/gildong">gildong 프로필</Link>
         <Route path="/profile/:username2" component={Profile}/>
+        <Route path="/Query" component={Query} exact={true}/>
       </div>
     );
   }
