@@ -5,6 +5,7 @@ const Query = ({ location }) => {
     const query = qs.parse(location.search, {
         ignoreQueryPrefix: true // 문자열 맨 앞의 ? 를 생략
     });
+    // 문자열로 넘어오기에 숫자로 받고 싶을 경우 parseInt() 사용해야함
     const showDetail = query.detail === 'true'; 
     return (
         <div>
